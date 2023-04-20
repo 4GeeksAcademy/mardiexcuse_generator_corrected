@@ -1,54 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    }
-    .prompt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    }
-    #excuse-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: black;
-    }
-    #excuse {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    }
-    #generateExcuse {
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 20px;
-    background-color: #FCA311;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    }
-    #generateExcuse:hover {
-    transform: scale(1.1);
-    background-color: #fff;
-    color: #FCA311;
-    }
-    h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: blue
-    }
-    button {
-    background-color: #4CAF50; /* Set background color */
-    color: white; /* Set text color */
-    padding: 10px 20px; /* Add some padding to the button */
-    font-size: 16px; /* Set font size */
-    border: none; /* Remove border */
-    cursor: pointer; /* Add cursor on hover */
-    border-radius: 4px; /* Add rounded corners */}
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#excuse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+}
+
+#excuse {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#generateExcuse {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #fca311;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#generateExcuse:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #fca311;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}
