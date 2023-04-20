@@ -6,41 +6,16 @@
   </head>
   <body>
     <div id="text">
-      <h1>OMG! you wont believe me but..</h1>
-      <div id="excuse-container">
+      <h1>OMG! you won't believe me but..</h1>
+      <div id="excuse-container" class="prompt">
         <p id="excuse">My dog ate my homework</p>
-        <button onclick="generateExcuse()">Generate Excuse</button>
+        <button id="generateExcuse" onclick="generateExcuse()">Generate Excuse</button>
+        <div id="excuseDisplay"></div>
       </div>
     </div>
-    <script>
-      function generateExcuse() {
-        let who = ["The dog", "My grandma", "His turtle", "My bird"];
-        let action = ["ate", "peed", "crushed", "broke"];
-        let what = ["my homework", "the keys", "the car", "the house"];
-        let when = [
-          "before the class",
-          "right on time",
-          "when I finished",
-          "during my lunch",
-          "while I was praying",
-          "in between my me time"
-        ];
 
-        let excuse =
-          who[Math.floor(Math.random() * who.length)] +
-          " " +
-          action[Math.floor(Math.random() * action.length)] +
-          " " +
-          what[Math.floor(Math.random() * what.length)] +
-          " " +
-          when[Math.floor(Math.random() * when.length)] +
-          ".";
-
-        document.getElementById("excuse").innerHTML = excuse;
-      }
-    </script>
-
-    <script src="index.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
+
 
