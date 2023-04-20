@@ -2,76 +2,74 @@
 <html>
   <head>
     <title>Excuse Generator</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
-       body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(247, 234, 234);
-    color: white;
-    text-align: center;
-  }
-  
-  
-  .prompt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #excuse-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color:rgb(163, 78, 78);
-  }
-  
-  #excuse {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  #generateExcuse {
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 20px;
-    background-color: #fca311;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #generateExcuse:hover {
-    transform: scale(1.1);
-    background-color: #fff;
-    color: #fca311;
-  }
-  
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(35, 35, 230);
-  }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(247, 234, 234);
+        color: whitesmoke;
+        text-align: center;
+      }
+
+      .prompt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #excuse-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: rgb(37, 37, 214);
+      }
+
+      #excuse {
+        font-size: 10rem;
+        margin-bottom: 1rem;
+      }
+
+      #generateExcuse {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        border: none;
+        border-radius: 20px;
+        background-color: #fca311;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-top: 2rem;
+      }
+
+      #generateExcuse:hover {
+        transform: scale(1.1);
+        background-color: #fff;
+        color: #fca311;
+      }
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+      }
     </style>
   </head>
   <body>
-    <div id="text">
+    <div id="excuse-container" class="prompt">
       <h1>OMG! you won't believe me but..</h1>
-      <div id="excuse-container" class="prompt">
-        <p id="excuse">My dog ate my homework</p>
-        <button id="generateExcuse" onclick="generateExcuse()">Generate Excuse</button>
-        <div id="excuseDisplay"></div>
-      </div>
+      <p id="excuseDisplay" style="font-size: 5rem;">My dog ate my homework</p>
+      <button id="generateExcuse" onclick="generateExcuse()">
+        Generate Excuse
+      </button>
     </div>
 
     <script src="app.js"></script>
   </body>
 </html>
-
-
